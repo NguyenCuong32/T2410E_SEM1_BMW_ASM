@@ -1,0 +1,433 @@
+body{
+    background-color: black;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.main-background{
+    position: relative;
+    width: 550px;
+    /* height: 100vh;  */
+    min-height: 100vh;
+    background-color: white;
+    margin: 0 auto;
+    max-width: 100%;
+}
+header{
+    justify-content: space-between;
+    display: flex;
+    min-height: 45px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    align-items: center;
+}
+#icon-fpt{
+    margin-left: 5px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+#icon-fpt p{
+    padding-left: 3px;
+    font-weight: 500;
+    font-size: 13px;
+    margin: 0;
+}
+#icon-fpt img{
+    width: 20px;
+}
+#nav-button{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    width: 50%;
+}
+#nav-button a:hover{
+    background-color: rgb(232, 232, 232);
+}
+#nav-button a{
+    width: fit-content;
+    /* padding: 5px; */
+    padding: 16px 13px;
+    font-size: 10px;
+    text-decoration: none;
+    color: rgb(132, 131, 131);
+    text-align: center;
+    margin: 0 auto;
+}
+#sign-in-up{
+    max-width: 130px;
+    width: 130px;
+    display: flex;
+}
+#sign-in-up a{
+    text-align: center;
+    text-decoration: none;
+    /* font-size: 10.5px; */
+    font-size: 60%;
+}
+#sign-in{
+    background-color: orange;
+    border-radius: 4px;
+    color: white;
+    display: block;
+    height: 29px;
+    width: 54px;
+    line-height: 29px;
+    margin-right: 10px;
+    transition-duration: 0.4s;
+    border: 1px solid orange;
+}
+#sign-in:hover{
+    background-color: white;
+    color: orange;
+}
+#sign-up{
+    border: 1px solid blue;
+    border-radius: 4px;
+    color: blue;
+    display: block;
+    height: 29px;
+    width: 54px;
+    line-height: 29px;
+    transition-duration: 0.4s;
+}
+#sign-up:hover{
+    border-color: rgb(21, 95, 253);
+    background-color: rgb(21, 95, 253);
+    color: white;
+}
+.ham{
+    height: 18px;
+    width: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ham span{
+    width: 90%;
+    align-items: center;
+    height: 2px;
+    background-color: black;
+    border-radius: 20px;
+}
+#sidebar-active{
+    display: none;
+}
+#ham-label{
+    display: none;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+
+}
+#close-label{
+    display: none;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+}
+.close{
+    margin-top: 14px;
+    margin-left: 7px;
+    margin-bottom: 13px;
+    position: relative;
+    width: 18px;
+    height: 18px;
+}
+.close span{
+    bottom: 45%;
+    position: absolute;
+    height: 1.5px;
+    width: 18px;
+    background-color: white;
+}
+#g1{
+    transform: rotate(45deg);
+}
+#g2{
+    transform: rotate(-45deg);
+}
+main{
+    /* margin-bottom: 10px; */
+    width: 100%;
+    min-height: 640px;
+    overflow: hidden;
+}
+.fpt-booking{
+    width: fit-content;
+    margin: 20px auto;
+}
+.fpt-booking img{
+    width: 400px;
+    max-width: 100%;
+}
+.box{
+    margin: 0 auto;
+    width: 449px;
+    max-width: 100%;
+}
+.info{
+    width: 100%;
+    max-width: 100%;
+}
+.header-text{
+    text-align: center;
+    font-size: 12.5px;
+    font-weight: 500;
+}
+.info label{
+    font-size: 13px;
+}
+#loinhan{
+    height: 70px;
+}
+.nghe{
+    margin-top: 13px;
+}
+.input-cl{
+    margin: 20px 0;
+}
+.info input{
+    border-radius: 4px;
+    border: 1px solid rgb(155, 155, 155);
+}
+.box input{
+    height: 23px;
+}
+.input-cl input,.nghe input{
+    float: right;
+    width: 340px;
+    max-width: 100%;
+}
+.input-sdt{
+    float: right;
+}
+.input-sdt input, .input-ns input{
+    width: 140px;
+    max-width: 100%;
+}
+#ns{
+    margin-left: 44.5px;
+}
+::placeholder{
+    color: rgb(180, 180, 180);
+    opacity: 0.8;
+    font-size: 12px;
+}
+textarea::placeholder{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.comment{
+    margin-top: 14px;
+}
+textarea{
+    border: 1px solid rgb(155, 155, 155);
+    border-radius: 4px;
+    margin-top: 4px;
+    float: right;
+    height: 70px;
+    width: 340px;
+    position: relative;
+}
+.dangky-huybo{
+    float: right;
+    margin-top: 10px;
+}
+.dangky-huybo button{
+    width: 70px;
+    height: 30px;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#dangky{
+    background-color: rgb(44, 44, 255);
+    margin-right: 10px;
+    transition-duration: 0.4s;
+    border: 1px solid rgb(44, 44, 255);
+}
+#dangky:hover{
+    background-color: white;
+    color: rgb(44, 44, 255);
+}
+#huybo{
+    background-color: rgb(255, 36, 36);
+    transition-duration: 0.4s;
+    border: 1px solid rgb(255, 36, 36);
+}
+#huybo:hover{
+    background-color: white;
+    color: rgb(255, 36, 36);
+}
+#xuong{
+    display: none;
+}
+footer{
+    width: 530px;
+    max-width: 99%;
+    min-height: 35px;
+    border: 1px solid rgb(179, 179, 179);
+    /* position: absolute; */
+    /* bottom: 5px; */
+    /* right: 0; */
+    /* left: 0; */
+    margin: 10px auto;
+    border-radius: 4px;
+}
+footer p{
+    margin: 1% 4%;
+    font-size: 11px;
+    text-align: right;
+}
+@media(max-width: 550px){
+    #icon-fpt{
+        margin-left: 0;
+    }
+    .main-background{
+        overflow: hidden;
+    }
+    header{
+        justify-content: start;
+        flex-wrap: wrap;
+    }
+    #sign-in-up{
+        margin-left: 1%;
+    }
+    #nav-button a:hover{
+        background-color: rgb(253, 191, 74);
+    }
+    #nav-button{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        top: 0;
+        right: -50%;
+        position: absolute;
+        z-index: 10;
+        background-color: rgb(255, 154, 39);
+        align-items: flex-start;
+        overflow: hidden;
+        transition: 0.2s linear;
+        /* border-radius: 4px 0px 0px 4px; */
+    }
+    #nav-button a{
+        display: block;
+        width: 100%;
+        text-align: start;
+        margin: 0;
+        padding: 10px;
+        color: white;
+        border-bottom: 1px solid white;
+        border-left: 1px solid white;
+    }
+    /* #loca{
+        border-bottom: none;
+    } */
+    #ham-label, #close-label{
+        display: block;
+    }
+    #ham-label
+    {
+        position: absolute;
+        right: 5%;
+        top: 15.5px;
+    }
+    #about-us{
+        border-top: 1px solid white;
+    }
+    #sidebar-active:checked ~ #nav-button{
+        /* display: flex; */
+        right: 0;
+    }
+}
+@media(max-width: 465px){
+    #dangky{
+        margin-bottom: 5px;
+    }
+    .dangky-huybo{
+        float: left;
+    }
+    #ns{
+        margin-left: 0;
+    }
+    #xuong{
+        display: block;
+    }
+    .nghe input, label{
+        float: left;
+        width: 80%;
+        box-sizing: border-box;
+    }
+    .comment label, textarea{
+        float: left;
+        width: 80%;
+    }
+    .input-cl input, label{
+    float: left;
+    width: 80%;
+    box-sizing: border-box;
+    }
+    .input-sdt{
+        float: left;
+    }
+    .input-sdt{
+        width: 100%;
+    }
+    .input-ns input{
+        width: 80%;
+        box-sizing: border-box;
+    }
+}
+@media(max-width: 270px){
+    /* header{
+        height: 100px;
+    } */
+    #sign-in, #sign-up{
+        margin-bottom: 5px;
+    }
+    #icon-fpt p{
+        font-size: 10px;
+    }
+    #ham-label{
+        right: 0;
+    }
+    #icon-fpt{
+        display: block;
+    }
+    #sign-in-up{
+        display: block;
+    }
+}
+@media(max-width: 110px){
+    #nav-button{
+        width: 100%;
+        right: -100%;
+    }
+    #icon-fpt p{
+        font-size: 8px;
+    }
+    #sign-in, #sign-up{
+        width: 42px;
+    }
+}
+@media(max-width: 80px){
+    #nav-button a{
+        font-size: 50%;
+        padding-left: 0;
+    }
+    #sign-in-up a{
+        width: 30px;
+        max-width: 100%;
+        font-size: 8.5px;
+    }
+    header{
+        padding-top: 15.5px;
+    }
+    #ham-label
+    {
+        position: inherit;
+        /* top: 15.5px; */
+    }
+}

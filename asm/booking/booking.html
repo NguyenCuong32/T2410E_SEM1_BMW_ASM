@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-background">
+        <header>
+            <input type="checkbox" id="sidebar-active">
+            <label id="ham-label" for="sidebar-active">
+                <div class="ham">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </label>
+            <a href="../home/home.html" id="icon-fpt">
+                <img src="../picture/aptech-icon.jpg" alt="aptech-icon">
+                <p>FPT Aptech</p>
+            </a>
+            <div id="nav-button">
+                <label id="close-label" for="sidebar-active">
+                    <div class="close">
+                        <span id="g1"></span>
+                        <span id="g2"></span>
+                    </div>
+                </label>
+                <a id="about-us" href="../home/home.html">About Us</a>
+                <a href="../products/products.html">Products</a>
+                <a href="./booking.html">Booking</a>
+                <a id="loca" href="../locations/locations.html">Locations</a>
+            </div>
+            <div id="sign-in-up">
+                <a id="sign-in" href="../login/login.html">Sign In</a>
+                <a id="sign-up" href="../login/login.html">Sign Up</a>
+            </div>
+        </header>
+        <main>
+            <div class="fpt-booking">
+                <img src="../picture/fptaptech.jpg" alt="fptaptech">
+            </div>
+            <div class="box">
+                <div class="header-text">
+                    <p>GHI DANH KHÓA HỌC</p>
+                </div>
+                <div class="info">
+                    <div class="input-cl">
+                        <label for="">Họ tên</label><br id="xuong">
+                        <input id="hoten" type="text" placeholder="Bắt buộc"> 
+                    </div>
+                    <div class="input-cl">
+                        <label for="">Địa chỉ</label><br id="xuong">
+                        <input id="diachi" type="text" placeholder="Bắt buộc">
+                    </div>
+                    <div class="input-ns">
+                        <label for="">Năm sinh</label><br id="xuong">
+                        <input id="ns" type="text" placeholder="Bắt buộc"> <br id="xuong">
+                        <span class="input-sdt">
+                            <label for="">SĐT</label>
+                            <input id="sdt" type="text" placeholder="Bắt buộc">
+                        </span>
+                    </div>
+                    <div class="nghe">
+                        <label for="">Nghề nghiệp</label><br id="xuong">
+                        <input id="nghe" type="text" placeholder="Bắt buộc">
+                    </div>
+                    <div class="comment">
+                        <label id="loi" for="">Lời nhắn</label><br id="xuong">
+                        <textarea name="" id="loinhan" placeholder="Không bắt buộc"></textarea>
+                    </div>
+                    <div class="dangky-huybo">
+                        <button id="dangky" onclick="pressed()">Đăng ký</button>
+                        <button id="huybo" type="button" onclick="huy()">Hủy bỏ</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Số 8 - Tôn Thất Thuyết - Mỹ Đình, Nam Từ Liêm, Hà Nội</p>
+        </footer>
+    </div>
+</body>
+<script>
+    function huy(){
+        var trong = ""
+        document.getElementById('hoten').value = trong
+        document.getElementById('diachi').value = trong
+        document.getElementById('ns').value = trong
+        document.getElementById('nghe').value = trong
+        document.getElementById('sdt').value = trong
+        document.getElementById('loinhan').value = trong
+    }
+    function pressed(){
+        var trong = ""
+        var message
+        var hoten = document.getElementById('hoten').value
+        var diachi = document.getElementById('diachi').value
+        var namsinh = document.getElementById('ns').value
+        var nghe = document.getElementById('nghe').value
+        var sdt = document.getElementById('sdt').value
+        if ((hoten != trong) && (diachi != trong) && (namsinh != trong) && (sdt != trong) && (nghe != trong)){
+            message = "Đăng ký thành công!!"
+        }
+        else{
+            message = "Đăng ký thất bại!!"
+        }
+        alert(message)
+    }
+    // function huy(){
+    //     var trong = "ngu"
+    //     document.getElementById('hoten').innerHTML = trong
+    // }
+</script>
+</html>
