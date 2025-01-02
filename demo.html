@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+</head>
+<body class="m-5">
+    <div class="card">
+        <div class="card-header">Simple calculator</div>
+        <div class="card-body">
+            <input class="form-control" id="x" placeholder="Enter x" onchange="onChangeValue()"></input>
+            <input class="form-control" id="y" placeholder="Enter y" onchange="onChangeValue()"></input>
+        </div>
+    </div>
+    <div class="my-3">
+        <span id="xvalue"></span>
+        <br>
+        <span id="yvalue"></span>
+        <br>
+        <span id="sumvalue"></span>
+        <br>
+        <span id="mulvalue"></span>
+        <br>
+        <span id="subvalue"></span>
+        <br>
+        <span id="divvalue"></span>
+    </div>
+</body>
+<script>
+    function onChangeValue() {
+        var x = document.getElementById("x").value
+        document.getElementById("xvalue").textContent = "x = " + x
+        var y = document.getElementById("y").value
+        document.getElementById("yvalue").textContent = "y = " + y
+        var sum = -(-x-y)
+        var mul = x*y
+        var sub = x-y
+        var div = (x/y).toFixed(3)
+        document.getElementById("sumvalue").textContent = "Sum of x and y = " + sum
+        document.getElementById("mulvalue").textContent = "Multiplication of x and y = " + mul
+        document.getElementById("subvalue").textContent = "Subtraction of x and y = " + sub
+        document.getElementById("divvalue").textContent = "Division of x and y = " + div
+    }
+</script>
+</html>
