@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="main-background">
+        <header>
+            <input type="checkbox" id="sidebar-active">
+            <label id="ham-label" for="sidebar-active">
+                <div class="ham">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </label>
+            <a href="../../home/home.html" id="icon-fpt">
+                <img src="../../picture/aptech-icon.jpg" alt="aptech-icon">
+                <p>FPT Aptech</p>
+            </a>
+            <div id="nav-button">
+                <label id="close-label" for="sidebar-active">
+                    <div class="close">
+                        <span id="g1"></span>
+                        <span id="g2"></span>
+                    </div>
+                </label>
+                <a id="about-us" href="../../home/home.html">About Us</a>
+                <a href="../../products/products.html">Products</a>
+                <a href="../../booking/booking.html">Booking</a>
+                <a id="loca" href="../../locations/locations.html">Locations</a>
+            </div>
+            <div id="sign-in-up">
+                <a id="sign-in" href="../sign-in/sign-in.html">Sign In</a>
+                <a id="sign-up" href="../sign-up/sign-up.html">Sign Up</a>
+            </div>
+        </header>
+        <main>
+            <div class="sign-bg">
+                <div class="username">
+                    <label for="">Username</label> <br>
+                    <input id="usn" type="text">
+                </div>
+                <div class="email">
+                    <label for="">Email</label> <br>
+                    <input id="email" type="text">
+                </div>
+                <div class="password">
+                    <label for="">Password</label> <br>
+                    <input id="pw" type="password">
+                </div>
+                <div class="password">
+                    <label for="">Confirm password</label> <br>
+                    <input id="cpw" type="password" required>
+                </div>
+                <div class="ctb">
+                    <p id="tb"></p>
+                </div>
+                <div class="sign-in-button">
+                    <button onclick="signup()">Sign up</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Số 8 - Tôn Thất Thuyết - Mỹ Đình, Nam Từ Liêm, Hà Nội</p>
+        </footer>
+    </div>
+</body>
+<script>
+    function signup(){
+        var trong = ""
+        var usn = document.getElementById('usn').value
+        var email = document.getElementById('email').value
+        var pw = document.getElementById('pw').value
+        var cpw = document.getElementById('cpw').value
+        if ((usn != trong) && (email != trong) && (pw != trong) && (cpw != trong)){
+            if (pw == cpw){
+                alert("Đăng ký thành công!!")
+            }
+            else{
+                document.getElementById('tb').innerHTML = "Mật khẩu không trùng"
+                alert("Đăng ký thất bại!!")
+            }
+        }
+        else{
+            alert("Đăng ký thất bại!!")
+        }
+    }
+</script>
+</html>
