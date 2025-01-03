@@ -28,20 +28,8 @@
         {
             text-decoration: none;
         }
-        .card img
-        {
-            height: 300px;
-            object-fit: cover;
-        }
-        .catanh
-        {
-            object-fit: cover;
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-        }
     </style>
-    <title>Location</title>
+    <title>Booking screen</title>
 </head>
 <header>
     <div class="row">
@@ -57,7 +45,7 @@
                         <a class="text-dark-emphasis" href="home.html">About Us</a>
                     </li>
                     <li class="col-3 navbar-nav ms-auto">
-                        <a class="text-dark-emphasis" class="text-dark-emphasis" href="products.html">Product</a>
+                        <a class="text-dark-emphasis" href="products.html">Product</a>
                     </li>
                     <li class="col-3 navbar-nav ms-auto">
                         <a class="text-dark-emphasis" href="booking.html">Booking</a>
@@ -76,26 +64,38 @@
 </header>
 <body>
     <div class="container justify-content-center p-5 mt-lg-5">
-        <img src="/assets/photos/ua-dai-code-them-Web-desktop.jpg" alt="Banner" class="img-fluid m-5">
-        <h4 class="text-primary-emphasis">LOCATION INFORMATION</h4>
+        <img src="/ASM - 1/assets/photos/ua-dai-code-them-Web-desktop.jpg"alt="Banner" class="img-fluid m-5">
     </div>
     <div class="container">
-        <div class="input-group row m-3">
-            <label class="form-label m-3 col-1">Họ tên</label>
-            <input type="name" id="name" class="form-control border border-dark-subtle rounded-4 p-4 col-9 text-end">
+        <div class="justify-content-center">
+            <h2 class="text-center">Ghi danh khóa học</h2>
+            <div class="fw-semibold input-group row m-3">
+                <label class="form-label m-3 col-1">Họ và tên</label>
+                <input type="name" id="formname" class="form-control border border-black rounded-4 p-4 col-9 text-end" placeholder="Vui lòng nhập họ tên" required value="Nguyễn Hoàng Nam">
+            </div>
+            <div class="fw-semibold input-group row m-3">
+                <label class="form-label m-3 col-1">Địa chỉ</label>
+                <input type="address" id="formaddress" class="form-control border border-black rounded-4 p-4 col-9 text-end" placeholder="Vui lòng nhập địa chỉ" required value="Tây Hồ Hà Nội">
+            </div>
+            <div class="fw-semibold row m-3 input-group">
+                <label class="form-label m-3 col-1">Ngày sinh </label>
+                <input type="date" id="formyear" class="form-control border border-black rounded-4 p-4 text-end" required>
+                <label class="form-label m-3 col-2 text-end">Số điện thoại</label>
+                <input type="tel" id="formphone" class="form-control border border-black rounded-4 p-4 text-end" placeholder="Vui lòng nhập số điện thoại" required>   
+            </div>
+            <div class="fw-semibold input-group row m-3">
+                <label class="form-label m-3 col-1">Nghề nghiệp</label>
+                <input type="job" id="formjob" class="form-control border border-black rounded-4 p-4 col-9 text-end" placeholder="Hãy cho biết nghề nghiệp hiện tại" required>
+            </div>
+            <div class="fw-semibold input-group row m-3">
+                <label class="form-label m-3 col-1">Lời nhắn</label>
+                <input type="msg" id="formmsg" class="form-control border border-black rounded-4 p-5 col-9 text-end">
+            </div>
         </div>
-        <div class="input-group row m-3">
-            <label class="form-label m-3 col-1">Email</label>
-            <input type="mail" id="email" class="form-control border border-dark-subtle rounded-4 p-4 col-9 text-end">
+        <div class="row justify-content-end">
+            <a href="google.com" class="btn btn-primary col-1 px-lg-4 m-2">Đăng kí</a>
+            <a class="btn btn-danger col-1 px-lg-4 m-2">Hủy bỏ</a>
         </div>
-        <div class="input-group row m-3">
-            <label class="form-label m-3 col-1">Lời nhắn</label>
-            <input type="mail" id="email" class="form-control border border-dark-subtle rounded-4 py-lg-5 col-9 text-end">
-        </div>
-        <div class="text-end">
-            <a href="" class="btn btn-primary px-lg-5 m-1 btn-lg">Gửi</a>
-        </div>
-        <img src="/assets/photos/LocationAPT.png" alt="Banner" class="img-fluid m-5 border border-dark-subtle rounded-3 shadow">
     </div>
     <footer class="bg-light py-sm-2 text-dark-emphasis border border-dark-subtle">
         <div class="container">
@@ -103,6 +103,7 @@
                 <p class="text-black">Số 8 - Tôn Thất Thuyết - Mỹ Đình, Nam Từ Liêm, HN</p>
             </div>
         </div>
+        
     </footer>
 </body>
 </html>
