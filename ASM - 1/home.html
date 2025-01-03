@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <style>
+        html,body{
+            height: 100%;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+        main
+        {
+            flex:auto;
+        }
+        header
+        {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        a
+        {
+            text-decoration: none;
+        }
+        .card img
+        {
+            height: 300px;
+            object-fit: cover;
+        }
+        .catanh
+        {
+            object-fit: cover;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+    </style>
+    <title>Home</title>
+</head>
+<header>
+    <div class="row">
+        <nav class="navbar navbar-expand-sm bg-light border border-dark-subtle d-flex justify-content-center">
+            <div class="container">
+                <img class="col-1 img-fluid m-3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/FPT_logo_2010.svg/1200px-FPT_logo_2010.svg.png" alt="">
+                <h3 class="text-black">FPT Aptech</h3>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <ul class="row collapse navbar-collapse m-3" id="IDNavi">
+                    <li class="col-3 navbar-nav ms-auto">
+                        <a class="text-dark-emphasis" href="home.html">About Us</a>
+                    </li>
+                    <li class="col-3 navbar-nav ms-auto">
+                        <a class="text-dark-emphasis" class="text-dark-emphasis" href="products.html">Product</a>
+                    </li>
+                    <li class="col-3 navbar-nav ms-auto">
+                        <a class="text-dark-emphasis" href="booking.html">Booking</a>
+                    </li>
+                    <li class="col-3 navbar-nav ms-auto">
+                        <a class="text-dark-emphasis" href="location.html">Location</a>
+                    </li>
+                </ul>
+                <div class="justify-content-end m-2">
+                    <a class="btn btn-warning text-white m-2 p-4" href="" role="button">Sign in</a>
+                    <a class="btn btn-outline-dark text-light-emphasis m-2 p-4" href="" role="button">Sign up</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<body>
+    <div class="container justify-content-center p-5 mt-lg-5">
+        <img src="/assets/photos/ua-dai-code-them-Web-desktop.jpg" alt="Banner" class="img-fluid m-5">
+    </div>
+    <h3 class="text-center text-capitalize fw-bold">Những ai nên tham gia khóa học tại FPT Aptech</h3>
+    <div class="d-flex justify-content-center flex-wrap">
+        <div class="card m-2" style="flex: 1 1 30%;">
+            <div class="card-body text-center">
+                <img src="/assets/photos/hoc-sinh-cap-3-co-nen-hoc-ielts-de-mien-thi-mon-tieng-anh-tpht.webp" alt="" class="img-fluid rounded-3">
+                <h3 class="text-primary">HỌC SINH THPT/GDTX</h3>
+                <p class="fw-bold">Các bạn muốn theo ngành CNTT, mong muốn học tập tại một môi trường đào tạo Lập trình chuyên nghiệp, chương trình bài bản, đảm bảo đầu ra</p>
+            </div>
+        </div>
+        <div class="card m-2" style="flex: 1 1 30%;">
+            <div class="card-body text-center">
+                <img src="/assets/photos/feature-article-how-to-study-effectively-at-uni-838x484-2019.png" alt="" class="img-fluid rounded-3">
+                <h3 class="text-primary">SINH VIÊN</h3>
+                <p class="fw-bold">Các bạn muốn theo ngành CNTT, mong muốn học tập tại một môi trường đào tạo Lập trình chuyên nghiệp, chương trình bài bản, đảm bảo đầu ra</p>
+            </div>
+
+        </div>
+        <div class="card m-2" style="flex: 1 1 30%;">
+            <div class="card-body text-center">
+                <img src="/assets/photos/what_is_back_office_job.webp" alt="" class="img-fluid rounded-3">
+                <h3 class="text-primary">NGƯỜI ĐI LÀM</h3>
+                <p class="fw-bold">Các bạn muốn theo ngành CNTT, mong muốn học tập tại một môi trường đào tạo Lập trình chuyên nghiệp, chương trình bài bản, đảm bảo đầu ra</p>
+            </div>
+        </div>
+    </div>
+    <h3 class="text-center text-capitalize fw-bold mt-lg-5">Chương trình học có những gì?</h3>
+    <div class="container">
+        <div class="row d-flex justify-content-between">
+            <div class="col-2">
+                <img src="/assets/photos/images.png" class="img-fluid catanh">
+            </div>
+            <div class="col-2">
+                <img src="/assets/photos/images.jpg" class="img-fluid catanh">
+            </div>
+            <div class="col-2">
+                <img src="/assets/photos/NET_Core_Logo.png"  class="img-fluid catanh">
+            </div>
+            <div class="col-2">
+                <img src="/assets/photos/PHP-logo.svg.png"  class="img-fluid catanh">
+            </div>
+            <div class="col-2">
+                <img src="/assets/photos/react-js-co-ban-phan-1-63738082145.3856.jpg"  class="img-fluid catanh">
+            </div>
+            <p class="fw-semibold p-3">Với thiết kế chương trình bao gồm 04 học kỳ với rất nhiều công nghệ quan trọng như ReactJS, PHP, Python, .NET Core, Spring boot đưa người học đến với thế giới lập trình nhanh, nhất hiệu quả nhất <br>Sinh viên sau khi tốt nghiệp có tự tin trước nhà tuyển dụng với 4 kỳ đồ án với những sản phẩm chất lượng, thực thế, chắc chắn các bạn sinh viên sẽ ghi điểm.</p>
+        </div>
+    </div>
+    <footer class="bg-light py-sm-2 text-dark-emphasis border border-dark-subtle">
+        <div class="container">
+            <div class="d-flex justify-content-end mx-4">
+                <p class="text-black">Số 8 - Tôn Thất Thuyết - Mỹ Đình, Nam Từ Liêm, HN</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

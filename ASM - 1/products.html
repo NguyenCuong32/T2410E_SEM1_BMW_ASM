@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <style>
+        html,body{
+            height: 100%;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+        main
+        {
+            flex:auto;
+        }
+        header
+        {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        a
+        {
+            text-decoration: none;
+        }
+        .card img
+        {
+            height: 300px;
+            object-fit: cover;
+        }
+        .catanh
+        {
+            object-fit: cover;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+    </style>
+    <title>Products</title>
+</head>
+<header>
+    <div class="row">
+        <nav class="navbar navbar-expand-sm bg-light border border-dark-subtle d-flex justify-content-center">
+            <div class="container">
+                <img class="col-1 img-fluid m-3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/FPT_logo_2010.svg/1200px-FPT_logo_2010.svg.png" alt="">
+                <h3 class="text-black">FPT Aptech</h3>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <ul class="row collapse navbar-collapse m-3" id="IDNavi">
+                    <li class="col-3 navbar-nav ms-auto">
+                        <a class="text-dark-emphasis" href="home.html">About Us</a>
+                    </li>
+                    <li class="col-3 navbar-nav ms-auto">
+                        <a class="text-dark-emphasis" class="text-dark-emphasis" href="products.html">Product</a>
+                    </li>
+                    <li class="col-3 navbar-nav ms-auto">
+                        <a class="text-dark-emphasis" href="booking.html">Booking</a>
+                    </li>
+                    <li class="col-3 navbar-nav ms-auto">
+                        <a class="text-dark-emphasis" href="location.html">Location</a>
+                    </li>
+                </ul>
+                <div class="justify-content-end m-2">
+                    <a class="btn btn-warning text-white m-2 p-4" href="" role="button">Sign in</a>
+                    <a class="btn btn-outline-dark text-light-emphasis m-2 p-4" href="" role="button">Sign up</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<body>
+
+    <div class="container justify-content-center p-5 mt-lg-5">
+        <div class="row">
+            <div class="col-2 fw-semibold  bg-light-subtle border border-light-subtle">
+                <br><br><div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">Apple</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">Samsung</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">Nokia</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">BlackBerry</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">Xiaomi</label>
+                </div>
+                <br><br><br><div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">Iphone</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">Macbook</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">Tablet</label>
+                </div>
+                <br><br><div class="mb-3">
+                    <label for="price" class="form-label">Price:</label>
+                    <span id="price">0$</span>
+                    <input type="range" class="form-range" id="price" min="0" max="10000" step="100" value="0" onchange="pricevalue(this.value)">
+                </div>
+            </div>
+            <div class="col-10 d-flex container justify-content-center p-5 mt-lg-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card m-2">
+                            <div class="card-body d-flex align-content-center">
+                                <img src="/assets/photos/iphone-15-pro-max_3.webp" alt="" class="img-fluid rounded-3">
+                                <h5 class="text-start mt-2">Iphone 15 Pro Max</h5>
+                            </div>
+                            <div class="justify-content-between d-flex">
+                                <h3 class="text-start text-primary fw-semibold p-1 mx-5">2.499$</h3>
+                                <h3 class="text-end text-danger fw-semibold text-decoration-line-through p-1 mx-5">2.500$</h3>
+                            </div>
+                            <div class="container justify-content-center d-flex">
+                                <button class="btn btn-outline-danger col-10">
+                                    <div class="text end fw-bolder text-end">BUY NOW</div>
+                                </button>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card m-2">
+                            <div class="card-body d-flex align-content-center">
+                                <img src="/assets/photos/iphone-15-plus_1__1.webp" alt="" class="img-fluid rounded-3">
+                                <h5 class="text-start mt-2">Iphone 15 Plus</h5>
+                            </div>
+                            <div class="justify-content-between d-flex">
+                                <h3 class="text-start text-primary fw-semibold p-1 mx-5">1.999$</h3>
+                                <h3 class="text-end text-danger fw-semibold text-decoration-line-through p-1 mx-5">2.000$</h3>
+                            </div>
+                            <div class="container justify-content-center d-flex">
+                                <button class="btn btn-outline-danger col-10">
+                                    <div class="fw-bolder text-end">BUY NOW</div>
+                                </button>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card m-2">
+                            <div class="card-body d-flex align-content-center">
+                                <img src="/assets/photos/iphone-15-plus_1__1.webp" alt="" class="img-fluid rounded-3">
+                                <h5 class="text-start mt-2">Iphone 15 Plus</h5>
+                            </div>
+                            <div class="justify-content-between d-flex">
+                                <h3 class="text-start text-primary fw-semibold p-1 mx-5">1.999$</h3>
+                                <h3 class="text-end text-danger fw-semibold text-decoration-line-through p-1 mx-5">2.000$</h3>
+                            </div>
+                            <div class="container justify-content-center d-flex">
+                                <button class="btn btn-outline-danger col-10">
+                                    <div class="fw-bolder text-end">BUY NOW</div>
+                                </button>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card m-2">
+                            <div class="card-body d-flex align-content-center">
+                                <img src="/assets/photos/iphone-15-pro-max_3.webp" alt="" class="img-fluid rounded-3">
+                                <h5 class="text-start mt-2">Iphone 15 Pro Max</h5>
+                            </div>
+                            <div class="justify-content-between d-flex">
+                                <h3 class="text-start text-primary fw-semibold p-1 mx-5">2.499$</h3>
+                                <h3 class="text-end text-danger fw-semibold text-decoration-line-through p-1 mx-5">2.500$</h3>
+                            </div>
+                            <div class="container justify-content-center d-flex">
+                                <button class="btn btn-outline-danger col-10">
+                                    <div class="text end fw-bolder text-end">BUY NOW</div>
+                                </button>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card m-2">
+                            <div class="card-body d-flex align-content-center">
+                                <img src="/assets/photos/iphone-15-pro-max_3.webp" alt="" class="img-fluid rounded-3">
+                                <h5 class="text-start mt-2">Iphone 15 Pro Max</h5>
+                            </div>
+                            <div class="justify-content-between d-flex">
+                                <h3 class="text-start text-primary fw-semibold p-1 mx-5">2.499$</h3>
+                                <h3 class="text-end text-danger fw-semibold text-decoration-line-through p-1 mx-5">2.500$</h3>
+                            </div>
+                            <div class="container justify-content-center d-flex">
+                                <button class="btn btn-outline-danger col-10">
+                                    <div class="text end fw-bolder text-end">BUY NOW</div>
+                                </button>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card m-2">
+                            <div class="card-body d-flex align-content-center">
+                                <img src="/assets/photos/iphone-15-plus_1__1.webp" alt="" class="img-fluid rounded-3">
+                                <h5 class="text-start mt-2">Iphone 15 Plus</h5>
+                            </div>
+                            <div class="justify-content-between d-flex">
+                                <h3 class="text-start text-primary fw-semibold p-1 mx-5">1.999$</h3>
+                                <h3 class="text-end text-danger fw-semibold text-decoration-line-through p-1 mx-5">2.000$</h3>
+                            </div>
+                            <div class="container justify-content-center d-flex">
+                                <button class="btn btn-outline-danger col-10">
+                                    <div class="fw-bolder text-end">BUY NOW</div>
+                                </button>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <footer class="bg-light py-sm-2 text-dark-emphasis border border-dark-subtle">
+        <div class="container">
+            <div class="d-flex justify-content-end mx-4">
+                <p class="text-black">Số 8 - Tôn Thất Thuyết - Mỹ Đình, Nam Từ Liêm, HN</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function pricevalue(value)
+        {
+            document.getElementById("price").textContent=value + '$';
+        }
+    </script>
+</body>
+</html>

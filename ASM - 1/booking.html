@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <style>
+        html,body{
+            height: 100%;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+        main
+        {
+            flex:auto;
+        }
+        header
+        {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        a
+        {
+            text-decoration: none;
+        }
+    </style>
+    <title>Booking screen</title>
+</head>
+<header>
+    <div class="row">
+        <nav class="navbar navbar-expand-sm bg-light border border-dark-subtle d-flex justify-content-center">
+            <div class="container">
+                <img class="col-1 img-fluid m-3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/FPT_logo_2010.svg/1200px-FPT_logo_2010.svg.png" alt="">
+                <h3 class="text-black">FPT Aptech</h3>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <ul class="row collapse navbar-collapse m-3" id="IDNavi">
+                    <li class="col-3 navbar-nav ms-auto">
+                        <a class="text-dark-emphasis" href="home.html">About Us</a>
+                    </li>
+                    <li class="col-3 navbar-nav ms-auto">
+                        <a class="text-dark-emphasis" href="products.html">Product</a>
+                    </li>
+                    <li class="col-3 navbar-nav ms-auto">
+                        <a class="text-dark-emphasis" href="booking.html">Booking</a>
+                    </li>
+                    <li class="col-3 navbar-nav ms-auto">
+                        <a class="text-dark-emphasis" href="location.html">Location</a>
+                    </li>
+                </ul>
+                <div class="justify-content-end m-2">
+                    <a class="btn btn-warning text-white m-2 p-4" href="" role="button">Sign in</a>
+                    <a class="btn btn-outline-dark text-light-emphasis m-2 p-4" href="" role="button">Sign up</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<body>
+    <div class="container justify-content-center p-5 mt-lg-5">
+        <img src="/assets/photos/ua-dai-code-them-Web-desktop.jpg" alt="Banner" class="img-fluid m-5">
+    </div>
+    <div class="container">
+        <div class="justify-content-center">
+            <h2 class="text-center">Ghi danh khóa học</h2>
+            <div class="fw-semibold input-group row m-3">
+                <label class="form-label m-3 col-1">Họ và tên</label>
+                <input type="name" id="formname" class="form-control border border-black rounded-4 p-4 col-9 text-end" placeholder="Vui lòng nhập họ tên" required value="Nguyễn Hoàng Nam">
+            </div>
+            <div class="fw-semibold input-group row m-3">
+                <label class="form-label m-3 col-1">Địa chỉ</label>
+                <input type="address" id="formaddress" class="form-control border border-black rounded-4 p-4 col-9 text-end" placeholder="Vui lòng nhập địa chỉ" required value="Tây Hồ Hà Nội">
+            </div>
+            <div class="fw-semibold row m-3 input-group">
+                <label class="form-label m-3 col-1">Ngày sinh </label>
+                <input type="date" id="formyear" class="form-control border border-black rounded-4 p-4 text-end" required>
+                <label class="form-label m-3 col-2 text-end">Số điện thoại</label>
+                <input type="tel" id="formphone" class="form-control border border-black rounded-4 p-4 text-end" placeholder="Vui lòng nhập số điện thoại" required>   
+            </div>
+            <div class="fw-semibold input-group row m-3">
+                <label class="form-label m-3 col-1">Nghề nghiệp</label>
+                <input type="job" id="formjob" class="form-control border border-black rounded-4 p-4 col-9 text-end" placeholder="Hãy cho biết nghề nghiệp hiện tại" required>
+            </div>
+            <div class="fw-semibold input-group row m-3">
+                <label class="form-label m-3 col-1">Lời nhắn</label>
+                <input type="msg" id="formmsg" class="form-control border border-black rounded-4 p-5 col-9 text-end">
+            </div>
+        </div>
+        <div class="row justify-content-end">
+            <a href="google.com" class="btn btn-primary col-1 px-lg-4 m-2">Đăng kí</a>
+            <a class="btn btn-danger col-1 px-lg-4 m-2">Hủy bỏ</a>
+        </div>
+    </div>
+    <footer class="bg-light py-sm-2 text-dark-emphasis border border-dark-subtle">
+        <div class="container">
+            <div class="d-flex justify-content-end mx-4">
+                <p class="text-black">Số 8 - Tôn Thất Thuyết - Mỹ Đình, Nam Từ Liêm, HN</p>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+</html>
