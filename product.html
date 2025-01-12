@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <style>
+        #signbox {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-brand img {
+            margin-right: 10px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .product-card {
+            border: 1px solid #adaaaa;
+            border-radius: 8px;
+            text-align: center;
+            padding: 15px;
+        }
+        .product-card img {
+            max-width: 30%;
+        }
+        .product-card .old-price {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <nav class="navbar navbar-expand navbar-light bg-light m-2">
+                <div class="navbar-brand">
+                    <img src="./logofpt.png" alt="Logo" height="50">
+                    <h4>FPT Store</h4>
+                </div>
+                <button class="navbar-toggler" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="idNavbar">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./aboutus.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./product.html">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./booking.html">Booking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./location.html">Location</a>
+                        </li>
+                    </ul>
+                    <button id="signbox" class="btn btn-warning ml-auto">Sign in</button>
+                    <button class="btn btn-outline-primary m-2">Sign up</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-3">
+                <h5>Filters</h5>
+                <div class="mb-3">
+                    <h6>Brand</h6>
+                    <div>
+                        <input type="checkbox" id="apple" class="form-check-input">
+                        <label for="apple" class="form-check-label">Apple</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="samsung" class="form-check-input">
+                        <label for="samsung" class="form-check-label">Samsung</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="nokia" class="form-check-input">
+                        <label for="nokia" class="form-check-label">Nokia</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="xiaomi" class="form-check-input">
+                        <label for="xiaomi" class="form-check-label">Xiaomi</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="blackberry" class="form-check-input">
+                        <label for="blackberry" class="form-check-label">BlackBerry</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <h6>Category</h6>
+                    <div>
+                        <input type="checkbox" id="iphone" class="form-check-input">
+                        <label for="iphone" class="form-check-label">Iphone</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="macbook" class="form-check-input">
+                        <label for="macbook" class="form-check-label">Macbook</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="tablet" class="form-check-input">
+                        <label for="tablet" class="form-check-label">Tablet</label>
+                    </div>
+                </div>
+                <div>
+                    <h6>Price</h6>
+                    <input type="range" class="form-range" min="500" max="5000" step="100">
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="product-card">
+                            <img src="./iphone-16-blue-600x600.png" alt="Iphone 16">
+                            <h6>Iphone 16 - 128GB</h6>
+                            <p class="price text-primary">2,500 $</p>
+                            <p class="old-price">2,600 $</p>
+                            <button class="btn btn-outline-danger">BUY NOW</button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card">
+                            <img src="./iphone-16-blue-600x600.png" alt="Iphone 16">
+                            <h6>Iphone 16 - 128GB</h6>
+                            <p class="price text-primary">2,500 $</p>
+                            <p class="old-price">2,600 $</p>
+                            <button class="btn btn-outline-danger">BUY NOW</button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card">
+                            <img src="./iphone-16-blue-600x600.png" alt="Iphone 16">
+                            <h6>Iphone 16 - 128GB</h6>
+                            <p class="price text-primary">2,500 $</p>
+                            <p class="old-price">2,600 $</p>
+                            <button class="btn btn-outline-danger">BUY NOW</button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card">
+                            <img src="./iphone-16-blue-600x600.png" alt="Iphone 16">
+                            <h6>Iphone 16 - 128GB</h6>
+                            <p class="price text-primary">2,500 $</p>
+                            <p class="old-price">2,600 $</p>
+                            <button class="btn btn-outline-danger">BUY NOW</button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card">
+                            <img src="./iphone-16-blue-600x600.png" alt="Iphone 16">
+                            <h6>Iphone 16 - 128GB</h6>
+                            <p class="price text-primary">2,500 $</p>
+                            <p class="old-price">2,600 $</p>
+                            <button class="btn btn-outline-danger">BUY NOW</button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-card">
+                            <img src="./iphone-16-blue-600x600.png" alt="Iphone 16">
+                            <h6>Iphone 16 - 128GB</h6>
+                            <p class="price text-primary">2,500 $</p>
+                            <p class="old-price">2,600 $</p>
+                            <button class="btn btn-outline-danger">BUY NOW</button>
+                        </div>
+        </div>
+    </div>
+
+    <footer class="bg-light py-3">
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center border rounded p-3" style="border-color: white;">
+                <p>Số 8 - Tôn Thất Thuyết - Mỹ Đình, Nam Từ Liêm, Hà Nội</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

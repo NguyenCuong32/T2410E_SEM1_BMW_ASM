@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css"> 
+</head>
+<style>
+    #signbox {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-brand img {
+        margin-right: 10px; /* Add spacing between the image and the text */
+    }
+</style>
+<body>
+    <header>
+        <div>
+            <nav class="navbar navbar-expand navbar-light bg-light m-2">
+                <div class="navbar-brand">
+                    <img src="./logofpt.png" alt="Logo" height="50">
+                    <h4>FPT Aptech</h4>
+                </div>
+                <button class="navbar-toggler" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="idNavbar">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./aboutus.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./product.html">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./booking.html">Booking</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./location.html">Location</a>
+                        </li>
+                    </ul>
+                    <button id="signbox" class="btn btn-warning ml-auto">Sign in</button>
+                    <button class="btn btn-outline-primary m-2">Sign up</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="d-flex justify-content-center m-3">
+            <div>
+                <img src="./logolocation.png" alt="logo fpt">
+            </div>
+        </div>
+        <div class="d-flex m-5 text-primary">
+            <h4>LOCATION INFORMATION</h4>
+        </div>
+        <div class="m-4">
+            <div class="d-flex align-content-center">
+               <h5>Họ tên</h5>
+               <textarea class="rounded-3 form-control" rows="1"></textarea>
+            </div>
+        </div>
+        <div class="m-4">
+            <div class="d-flex align-content-center">
+               <h5>Email</h5>
+               <textarea class="rounded-3 form-control" rows="1"></textarea>
+            </div>
+        </div>
+        <div class="m-4">
+            <div class="d-flex align-content-center">
+                <h5>Lời nhắn</h5>
+                <textarea class="rounded-3 form-control" rows="4"></textarea>
+
+
+            </div>
+            <div class="justify-content-end d-flex m-4">
+                <button class="btn btn-primary w-25">
+                    gửi
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="justify-content-center d-flex">
+        <a href="https://www.google.com/maps/place/8a+T%C3%B4n+Th%E1%BA%A5t+Thuy%E1%BA%BFt,+M%E1%BB%B9+%C4%90%C3%ACnh,+C%E1%BA%A7u+Gi%E1%BA%A5y,+H%C3%A0+N%E1%BB%99i+100000,+Vi%E1%BB%87t+Nam/@21.0288015,105.7797143,17z/data=!3m1!4b1!4m6!3m5!1s0x313454b32b842a37:0xe91a56573e7f9a11!8m2!3d21.0288015!4d105.7822892!16s%2Fg%2F11hz0g55hn?hl=vi-VN&entry=ttu&g_ep=EgoyMDI1MDEwNi4xIKXMDSoASAFQAw%3D%3D" target="_blank" class="text-decoration-none">
+            <button class="btn p-0 border-0" style="background: none;">
+                <img src="./download.jpg" alt="googlemap" style="max-width: 100%; height: auto;">
+            </button>
+        </a>
+    </div>
+
+<footer class="bg-light py-3">
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center border rounded p-3" style="border-color: white;">
+                <p>Số 8 - Tôn Thất Thuyết - Mỹ Đình, Nam Từ Liêm, Hà Nội</p>
+            </div>
+        </div>
+</footer>
+
+
+    </main>
