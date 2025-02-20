@@ -1,0 +1,22 @@
+[
+    {
+        "src":"rtx_1.webp",
+        "id":1,
+        "alt":"img1"
+    },
+    {
+        "src":"rtx_2.jpg",
+        "id":2,
+        "alt":"img2"
+    },
+    {
+        "src":"amd_1.webp",
+        "id":3,
+        "alt":"img3"
+    },
+    {
+        "src":"Intel_1.webp",
+        "id":4,
+        "alt":"img4"
+    }
+]

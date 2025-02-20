@@ -1,0 +1,11 @@
+.navbar-nav .nav-link {
+    text-decoration: none;
+    color: navy; 
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.emailtext{
+    color:black;
+    text-decoration: none;
+}

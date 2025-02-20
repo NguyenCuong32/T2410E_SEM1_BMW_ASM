@@ -1,0 +1,44 @@
+[
+    {
+        "title":"ROG Astra RTX 5090 32GB GDDR7",
+        "src":"rtx5090_1.jpg",
+        "id":1,
+        "alt":"5090_1",
+        "price": "75.000.000"
+    },
+    {
+        "title":"Gigabyte Windforce RTX 5090 OC",
+        "src":"rtx5090_2.jpg",
+        "id":2,
+        "alt":"5090_2",
+        "price": "90.000.000"
+    },
+    {
+        "title":"ZOTAC GAMING RTX 5090 32GB GDDR7 SOLID",
+        "src":"rtx5090_3.webp",
+        "id":3,
+        "alt":"5090_3",
+        "price": "110.000.000"
+    },
+    {
+        "title":"GALAX RTX 5090 32GB 1-CLICK OC",
+        "src":"rtx5090_4.png",
+        "id":4,
+        "alt":"5090_4",
+        "price": "65.000.000"
+    },
+    {
+        "title":"AORUS MASTER RTX 5090 32GB GDDR7 WHITE EDITION",
+        "src":"rtx5090_5.png",
+        "id":5,
+        "alt":"5090_5",
+        "price": "120.000.000"
+    },
+    {
+        "title":"TUF GAMING RTX 5090 32GB GDDR7",
+        "src":"rtx5090_6.webp",
+        "id":6,
+        "alt":"5090_6",
+        "price": "80.000.000"
+    }
+]

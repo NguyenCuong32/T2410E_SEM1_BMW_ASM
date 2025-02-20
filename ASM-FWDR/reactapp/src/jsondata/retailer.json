@@ -1,0 +1,51 @@
+[
+    {
+        "id":1,
+        "R_name":"Chi nhánh Hà Nội",
+        "R_address":"10, ngõ 18, Lương Ngọc Quyến, Văn Quán, Hà Đông, Hà Nội, Việt Nam",
+        "phonenum":"0876111609",
+        "email":"hnjson_cc@jshop.com"
+    },
+    {
+        "id":2,
+        "R_name":"Chi nhánh Mondstadt",
+        "R_address":"Goth Grand Hotel,Mondstadt City, Mondstadt, Teyvat",
+        "phonenum":"012-111-2809",
+        "email":"mondstadtbranchty@jshop.com"
+    },
+    {
+        "id":3,
+        "R_name":"Chi nhánh Fontaine",
+        "R_address":"F3 Hotel Debord, Quartier Narbonnais, Court of Fontaine, Fontaine Republic, Teyvat",
+        "phonenum":"(022)-22222222",
+        "email":"fntrep_cc@jshop.com"
+    },
+    {
+        "id":4,
+        "R_name":"Chi nhánh Tokyo",
+        "R_address":"20-1 Sakuragaoka-cho, Shibuya-ku, Tokyo, Japan",
+        "phonenum":"090-1234-5678",
+        "email":"nipponcustomercare@jshop.com"
+    },
+    {
+        "id":5,
+        "R_name":"Chi nhánh Los Angeles",
+        "R_address":"Santa Monica Submarket, West Los Angeles, Cluster, Santa Monica, CA, USA",
+        "phonenum":"(209)-480-3150",
+        "email":"unitedstateca@jshop.com.us"
+    },
+    {
+        "id":6,
+        "R_name":"Chi nhánh Thành Phố Hồ Chí Minh",
+        "R_address":"Tầng 11, Tòa nhà Miss Áo Dài, số 21 Đường Nguyễn Trung Ngạn, Phường Bến Nghé, Quận 1, Thành phố Hồ Chí Minh, Việt Nam",
+        "phonenum":"0230041975",
+        "email":"sgnjson_cc@jshop.com"
+    },
+    {
+        "id":"...",
+        "R_name":"Coming soon",
+        "R_address":"...",
+        "phonenum":"...",
+        "email":"..."
+    }
+]
